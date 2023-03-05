@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://127.0.0.1:5500/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <title>Soya Hara - links</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <link rel="stylesheet" href="./Soya Hara - links_files/index.css">
+        <script src="./Soya Hara - links_files/three.min.js.ダウンロード"></script>
+        <script src="./Soya Hara - links_files/vanta.birds.min.js.ダウンロード"></script>
+        <script>
+            window.addEventListener('DOMContentLoaded',()=>{
+                VANTA.BIRDS({
+                el: "#vanta",
+                mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 200.00,
+  minWidth: 200.00,
+  scale: 1.00,
+  scaleMobile: 1.00,
+  color1: 0xe1ff,
+  birdSize: 0.70,
+  wingSpan: 16.00,
+  speedLimit: 8.00,
+  quantity: 4.00,
+                backgroundAlpha: 0.0,
+            })
+
+            setTimeout(()=> {
+                const main = document.querySelector('main')
+                main.style.opacity = 1
+                main.style.filter = 'blur(0px)'
+            },1000)
+        })
+        </script>
+    </head>
+    <body>
+        <div id="vanta"><canvas class="vanta-canvas" width="895" height="843" style="display: block; position: absolute; z-index: 0; top: 0px; left: 0px; width: 895px; height: 843px;"></canvas></div>
+        <main style="opacity: 1; filter: blur(0px);">
+            <header>
+                <img src="./Soya Hara - links_files/Soya.jpg">
+                <h1>@Soya-Hara</h1>
+            </header>
+            <ul>
+                <li>
+                    <a href="https://www.youtube.com/channel/UCLP5CI-zqqTO2i8brbbqMtQ">
+                    <img src="./Soya Hara - links_files/youtube.jpg" alt="Youtube" width="30">
+                    YouTube </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/Am_to_kyr4123">
+                        <img src="./Soya Hara - links_files/twitter-logo-201908.png" alt="Twitter" width="30">
+                    Twitter </a>
+                </li>
+                <li>
+                    <a href="https://github.com/hayate0116">
+                        <img src="./Soya Hara - links_files/GitHub-Mark.png" alt="Github" width="30">
+                    Github </a>
+                </li>
+            </ul>
+        </main>
+    <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
